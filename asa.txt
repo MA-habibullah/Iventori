@@ -1,0 +1,6 @@
+SELECT barang.nama, dana.nama, brand.nama, ruang.nama ,barang.no_surat, barang.material
+                FROM
+                barang
+                INNER JOIN dana ON barang.id_dana=dana.id_dana
+                INNER JOIN brand ON barang.id_brand=brand.id_brand
+                INNER JOIN ruang ON barang.id_ruang=ruang.id_ruang
